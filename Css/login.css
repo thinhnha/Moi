@@ -1,0 +1,110 @@
+/* Toàn bộ trang */
+body {
+  font-family: Arial, sans-serif;
+  background-size: cover;
+  background-position: center;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Container chính của form đăng nhập */
+.main {
+  background-color: rgba(0, 0, 0, 0.6); /* Màu nền tối cho form */
+  padding: 40px;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  color: #fff;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+/* Thông báo lỗi */
+.error {
+  color: red;
+  font-size: 14px;
+  margin-bottom: 15px;
+}
+
+/* Các container của input */
+.input-container {
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.input-container label {
+  display: block;
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ddd;
+}
+
+.input-container input {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border-radius: 25px;
+  border: 1px solid #ccc;
+  color: #333;
+  box-sizing: border-box;
+}
+
+.input-container input:focus {
+  border-color: #4CAF50;
+  outline: none;
+}
+
+/* Nút đăng nhập */
+button {
+  padding: 15px;
+  border-radius: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  border: none;
+  color: white;
+  cursor: pointer;
+  background: linear-gradient(90deg, #4CAF50, #45a049);
+  width: 100%;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease, color 0.3s ease;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #45a049, #4CAF50);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+  color: #007BFF;
+}
+
+button:active {
+  transform: translateY(0);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(90deg, #3e8e41, #45a049);
+}
+
+/* Liên kết tạo tài khoản */
+p {
+  font-size: 14px;
+  color: #fff;
+}
+
+p a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+p a:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,523 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap');
+*{
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    line-height: 1.15;
+    color: #111;    
+}
+#header {
+    background-color: #131921;
+}
+/* Căn chỉnh phần tử "Chào" và nút đăng xuất */
+#header .form-login {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 0; /* Đảm bảo không có khoảng cách thừa trên */
+}
+
+#header .user-info {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 15px;
+    line-height: 1; /* Căn chỉnh chiều cao dòng cho đều */
+}
+
+/* Đảm bảo nút đăng xuất cũng thẳng hàng với phần "Chào" */
+.logout-btn {
+    margin-top: 0; /* Đảm bảo không có lề trên */
+    line-height: 1; /* Căn chỉnh chiều cao dòng */
+}
+
+.container-menu {
+    max-width: 1200px;
+    margin: 0px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    justify-items: center;
+}
+#logomenu {
+    padding: 5px 0px;
+}
+#logomenu img{
+    max-width: 80px;
+    height: auto;
+}
+#main-menu {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px;
+}
+#main-menu li {
+    position: relative;
+    font-weight: bold;
+}
+#main-menu li a {
+    color: #f8f8f8;
+    display: block;
+    padding: 18px 24px;
+    text-decoration: none;
+    font-size: 20px;
+}
+#main-menu>li>a {
+    position: relative;
+}
+#main-menu>li>a::before {
+    content: "";
+    height: 4px;
+    width: 0px;
+    background-color: #f00;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+}
+#main-menu>li:hover>a::before {
+    width: 100%;
+}
+
+form.example input[type=text] {
+    padding: 10px;
+    font-size: 17px;
+    border: none;
+    float: left;
+    width: 80%;
+    background: #f1f1f1;
+    height: 40px;
+    border-radius: 15px 0px 0px 15px;
+    outline: none;
+  }
+  
+  form.example button {
+    float: left;
+    width: 20%;
+    padding: 10px;
+    background: #f1f1f1;
+    color: gray;
+    font-size: 17px;
+    border: none;
+    border-left: none;
+    cursor: pointer;
+    border-radius: 0px 15px 15px 0px;
+  }
+  
+  form.example button:hover {
+    background: #0b7dda;
+  }
+  
+  form.example::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  .form-search {
+    text-align: center;
+    margin: auto;
+  }
+  .head {
+    background-color: #131921;
+    padding: 0px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0px; 
+    display: flex;
+    text-align: center;
+  }
+  .form-login {
+    text-align: right;
+    font-size:large;
+    display: block;
+    margin-top: 25px;
+  }
+  .form-login button {
+    height: 40px;
+    width: 130px;
+    border-radius: 5p;
+  }
+.login-btn {
+    color: white;
+    background-color: rgba(128, 128, 128, 0.744);
+}
+/* CSS cho nút đăng nhập */
+.login-btn {
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    border-radius: 25px; /* Bo tròn nút */
+    cursor: pointer; /* Hiển thị con trỏ dạng tay khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+    margin-left: 10px; /* Khoảng cách giữa nút và các phần tử khác */
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+.login-btn:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Nút nhô lên một chút */
+}
+
+/* Hiệu ứng khi nhấn vào nút */
+.login-btn:active {
+    background-color: #3e8e41; /* Màu nền khi nhấn */
+    transform: translateY(0); /* Quay lại vị trí ban đầu */
+}
+
+/* CSS cho phần "Chào" */
+.user-info {
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    margin-right: 15px; /* Khoảng cách giữa chữ "Chào" và nút đăng xuất */
+    display: inline-block; /* Hiển thị cùng dòng */
+    vertical-align: middle; /* Canh giữa với các nút */
+}
+
+/* CSS cho nút đăng xuất */
+.logout-btn {
+    background-color: #ff4d4d; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    border-radius: 25px; /* Bo tròn nút */
+    cursor: pointer; /* Hiển thị con trỏ dạng tay khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+/* Hiệu ứng hover cho nút đăng xuất */
+.logout-btn:hover {
+    background-color: #e60000; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Nút nhô lên một chút */
+}
+
+/* Hiệu ứng khi nhấn vào nút đăng xuất */
+.logout-btn:active {
+    background-color: #cc0000; /* Màu nền khi nhấn */
+    transform: translateY(0); /* Quay lại vị trí ban đầu */
+}
+#main-content {
+    max-width: 1400px;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 300px auto;
+    grid-template-areas: 
+    "sidebar picture"
+    "sidebar content"
+}
+.product-filters {
+    margin: 30px 50px;
+}
+.all {
+    border: 1px solid rgb(1, 84, 148);
+    border-radius: 4px;
+    border-collapse: collapse;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(1, 84, 148);
+    padding: 12px 12px;
+    margin: 5px;
+}
+.ps5 {
+    border: 1px solid rgb(1, 84, 148);
+    border-radius: 4px;
+    border-collapse: collapse;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(1, 84, 148);
+    padding: 12px 12px;
+    margin: 5px;
+}
+.ps4 {
+    border: 1px solid rgb(1, 84, 148);
+    border-radius: 4px;
+    border-collapse: collapse;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(1, 84, 148);
+    padding: 12px 12px;
+    margin: 5px;
+}
+.Nintendo_Switch {
+    border: 1px solid rgb(1, 84, 148);
+    border-radius: 4px;
+    border-collapse: collapse;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(1, 84, 148);
+    padding: 12px 12px;
+    margin: 5px;
+}
+.Xbox_One {
+    border: 1px solid rgb(1, 84, 148);
+    border-radius: 4px;
+    border-collapse: collapse;
+    display: inline-block;
+    font-weight: 400;
+    font-size: 16px;
+    color: rgb(1, 84, 148);
+    padding: 12px 12px;
+    margin: 5px;
+}
+.product-filters a {
+    text-decoration: none;
+}
+#picture {
+    grid-area: picture;
+}
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    display: flex;
+}
+.slideshow-container img {
+    width: 1120px;
+    height: 300px;
+}   
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.active:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next {font-size: 11px}
+}
+#content {
+    background-color: #f5f5f5;
+    grid-area: content;
+}
+.headline {
+    text-align: center;
+}
+.products-item {
+    background-color: #f1f1f1;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+ul.products {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+ul.products li {
+    flex-basis: 25%;
+    padding-left: 15px;
+    padding-right: 15px;
+    box-sizing: border-box;
+}
+ul.products li img {
+    max-width: 100%;
+    height: 210px;
+}
+ul.products li .product-info {
+    padding: 10px 0px;
+}
+ul.products li .product-info a {
+    display: block;
+    text-decoration: none;
+}
+ul.products li .product-info a.product-name {
+    color: #334862;
+    padding: 3px 0px;
+}
+ul.products li .product-info .product-price {
+    color: #4CAF50;
+    padding: 2px 0px;
+    font-weight: 800;
+}
+#sidebar {
+    grid-area: sidebar;
+    border: 0.1px solid #959fac;
+    background-color:#f5f5f5 ;
+}
+h2 {
+    text-align: center;
+    color: #e01809e2;
+}
+.product-item {
+    background-color: #f1f1f1;
+    padding: 0px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    width: 200px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+}
+.product-item li {
+    font-weight: bold;
+    list-style: none;
+}
+.item-1 {
+    text-align: center;
+    margin: 0px;
+}
+.item-2 {
+    text-decoration: none;
+    color: #131921;
+    text-align: center;
+    margin: 0px;
+    font-size: small;
+    padding: 0px 3px;
+}
+.item-3 {
+    text-align: center;
+    color: #4CAF50;
+    font-weight: 800;
+}
+#footer {
+    margin-top: 15px;
+    width: 100%;
+    padding: 100px 15%;
+    background: #333;
+    color: #efefef;
+    display: flex;
+}
+#footer div {
+    text-align: center;
+}
+#footer div h3 {
+    font-weight: 300;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+}
+.col-1 {
+    max-width: 350px;
+}
+.col-2 {
+    flex-grow: 2;
+}
+.col-1 a {
+    display: block;
+    text-decoration: none;
+    color: #efefef;
+    margin-bottom: 10px;
+}
+.sotical-icons {
+    margin-top: 30px;
+}
+.sotical-icons i {
+    font-size: 25px;
+    margin: 10px;
+    cursor: pointer;
+    color: #f1f1f1;
+}
+.pagination {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 0;
+    gap: 5px;
+    font-family: Arial, sans-serif;
+}
+
+.pagination button {
+    background-color: #fff; /* Màu nền trắng */
+    color: #007bff; /* Màu chữ xanh */
+    border: 1px solid #ddd; /* Viền nhạt */
+    border-radius: 50%; /* Bo tròn nút */
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all 0.3s ease; /* Hiệu ứng mượt */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pagination button:hover {
+    background-color: #007bff; /* Màu nền xanh khi hover */
+    color: #fff; /* Màu chữ trắng khi hover */
+    border-color: #007bff; /* Viền khi hover */
+}
+
+.pagination button.active {
+    background-color: #007bff; /* Màu nền nút đang active */
+    color: #fff; /* Màu chữ trắng */
+    border-color: #007bff; /* Viền xanh */
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Tạo hiệu ứng đổ bóng */
+}
+
+.pagination button:disabled {
+    background-color: #f8f8f8; /* Màu nền khi bị vô hiệu hóa */
+    color: #ccc; /* Màu chữ nhạt */
+    border-color: #ddd; /* Viền nhạt */
+    cursor: not-allowed; /* Con trỏ khi bị vô hiệu hóa */
+}
+
+.pagination .dots {
+    color: #aaa; /* Màu cho dấu 3 chấm */
+    font-size: 18px;
+    padding: 0 10px;
+}

@@ -1,0 +1,149 @@
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    margin: 0;
+}
+#all-content {
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-rows: 60px auto;
+    grid-template-areas: 
+    "title title"
+    "menu body"
+}
+#title {
+    background-color: rgb(255, 132, 0);
+    grid-area: title;
+    padding: 0px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0px; 
+    display: flex;
+    text-align: center;
+}
+#title a {
+    text-decoration: none;
+    margin-left: 5px;
+    margin-bottom: 20px;
+}
+#title a p{
+    color: aliceblue;
+    font-size: 30px;
+    font-weight: 700;
+    margin-top: 15px;
+}
+/* Căn chỉnh phần tử "Chào" và nút đăng xuất */
+#title .form-login {
+    display: flex;
+    align-items: center; /* Căn giữa theo chiều dọc */
+    margin-top: 0; /* Đảm bảo không có khoảng cách thừa trên */
+    margin-left: 800px;
+}
+
+#title .user-info {
+    font-size: 15px;
+    font-weight: bold;
+    margin-right: 15px;
+    line-height: 1; /* Căn chỉnh chiều cao dòng cho đều */
+}
+
+/* Đảm bảo nút đăng xuất cũng thẳng hàng với phần "Chào" */
+.logout-btn {
+    margin-top: 0; /* Đảm bảo không có lề trên */
+    line-height: 1; /* Căn chỉnh chiều cao dòng */
+}
+/* CSS cho nút đăng nhập */
+.login-btn {
+    background-color: #4CAF50; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    border-radius: 25px; /* Bo tròn nút */
+    cursor: pointer; /* Hiển thị con trỏ dạng tay khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+    margin-left: 10px; /* Khoảng cách giữa nút và các phần tử khác */
+}
+
+/* Hiệu ứng hover cho nút đăng nhập */
+.login-btn:hover {
+    background-color: #45a049; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Nút nhô lên một chút */
+}
+
+/* Hiệu ứng khi nhấn vào nút */
+.login-btn:active {
+    background-color: #3e8e41; /* Màu nền khi nhấn */
+    transform: translateY(0); /* Quay lại vị trí ban đầu */
+}
+
+/* CSS cho phần "Chào" */
+.user-info {
+    color: white; /* Màu chữ */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    margin-right: 15px; /* Khoảng cách giữa chữ "Chào" và nút đăng xuất */
+    display: inline-block; /* Hiển thị cùng dòng */
+    vertical-align: middle; /* Canh giữa với các nút */
+}
+
+/* CSS cho nút đăng xuất */
+.logout-btn {
+    background-color: #ff4d4d; /* Màu nền */
+    color: white; /* Màu chữ */
+    border: none; /* Bỏ viền */
+    padding: 10px 20px; /* Khoảng cách bên trong nút */
+    font-size: 16px; /* Kích thước chữ */
+    font-weight: bold; /* Chữ đậm */
+    border-radius: 25px; /* Bo tròn nút */
+    cursor: pointer; /* Hiển thị con trỏ dạng tay khi hover */
+    transition: all 0.3s ease; /* Hiệu ứng chuyển động khi hover */
+    text-decoration: none; /* Bỏ gạch chân */
+}
+
+/* Hiệu ứng hover cho nút đăng xuất */
+.logout-btn:hover {
+    background-color: #e60000; /* Màu nền khi hover */
+    transform: translateY(-2px); /* Nút nhô lên một chút */
+}
+
+/* Hiệu ứng khi nhấn vào nút đăng xuất */
+.logout-btn:active {
+    background-color: #cc0000; /* Màu nền khi nhấn */
+    transform: translateY(0); /* Quay lại vị trí ban đầu */
+}
+#menu {
+    background-color: #8ad385;
+    grid-area: menu;
+    height: 675px;
+}
+#menu ul {
+    background: #8ad385;
+    width: auto;
+    padding: 0;
+    list-style-type: none;
+}
+#menu ul li {
+    width: auto;
+    height: 40px;
+    line-height: 40px;
+    border-bottom: 1px solid #e8e8e8;
+    padding: 0 1em;
+}
+#menu ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
+    margin-left: 30px;
+}
+#menu ul li a i {
+    margin-right: 5px;
+}
+#menu ul li:hover {
+    background: #cde2cd;
+}
+img {
+    height: 675px;
+    width: 1215px;
+}

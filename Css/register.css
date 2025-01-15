@@ -1,0 +1,114 @@
+/* Toàn bộ trang */
+body {
+    font-family: Arial, sans-serif;
+    background: url('../background2.jpg') no-repeat center center fixed;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+/* Container chính của form đăng ký */
+.main {
+    background-color: rgba(0, 0, 0, 0.7); /* Màu nền tối */
+    padding: 30px;  /* Giảm padding để form không bị quá to */
+    border-radius: 8px;
+    width: 100%;
+    max-width: 350px; /* Điều chỉnh kích thước tối đa của form */
+    text-align: center;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    height: 720px;
+}
+
+  
+  h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #fff;
+  }
+  
+  /* Thông báo lỗi */
+  .error {
+    color: red;
+    font-size: 14px;
+    margin-bottom: 15px;
+  }
+  
+  /* Các container của input */
+  .input-container {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  .input-container label {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 5px;
+    color: #ddd;
+  }
+  
+  .input-container input {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border-radius: 25px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    color: #333;
+    box-sizing: border-box;
+  }
+  
+  .input-container input:focus {
+    border-color: #4CAF50;
+    outline: none;
+  }
+  
+  /* Nút đăng ký */
+  button {
+    padding: 15px;
+    border-radius: 25px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+    background: linear-gradient(90deg, #4CAF50, #45a049);
+    width: 100%;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(90deg, #45a049, #4CAF50);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    color: #007BFF;
+  }
+  
+  button:active {
+    transform: translateY(0);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background: linear-gradient(90deg, #3e8e41, #45a049);
+  }
+  
+  /* Liên kết đến đăng nhập */
+  p {
+    font-size: 14px;
+    color: #fff;
+  }
+  
+  p a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  p a:hover {
+    text-decoration: underline;
+  }
+  
